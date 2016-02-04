@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="not-ie" lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic meta tags -->
+	<meta charset="utf-8">
+	<title>Kodai Asif Cabs</title>
+	<meta name="description" content="Plain is a responsible HTML template with 12-column grid based on popular Twitter Bootstrap framework. This theme is suitable as a clean and easily maintainable template for any business, portfolio or single-project site, with support for mobile devices and latest HTML5 &amp; CSS3 user interface components.">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Styles -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/font-awesome/font-awesome.css" rel="stylesheet">
+	<!--[if IE 7]>
+		<link href="css/font-awesome/font-awesome-ie7.css" rel="stylesheet">
+	<![endif]-->
+
+	<!-- Web Fonts  -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+	<!-- Javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+ <script>
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:5500.0,d:3000.0,o:-1.0,r:240.0,e:{r:2.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,c:{x:51.0,t:-51.0}},{b:0.0,d:1000.0,o:1.0,c:{x:-51.0,t:51.0},e:{o:7.0,c:{x:7.0,t:7.0}}}],
+              [{b:-1.0,d:1.0,o:-1.0,sX:9.0,sY:9.0},{b:1000.0,d:1000.0,o:1.0,sX:-9.0,sY:-9.0,e:{sX:2.0,sY:2.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,r:-180.0,sX:9.0,sY:9.0},{b:2000.0,d:1000.0,o:1.0,r:180.0,sX:-9.0,sY:-9.0,e:{r:2.0,sX:2.0,sY:2.0}}],
+              [{b:-1.0,d:1.0,o:-1.0},{b:3000.0,d:2000.0,y:180.0,o:1.0,e:{y:16.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,r:-150.0},{b:7500.0,d:1600.0,o:1.0,r:150.0,e:{r:3.0}}],
+              [{b:10000.0,d:2000.0,x:-379.0,e:{x:7.0}}],
+              [{b:10000.0,d:2000.0,x:-379.0,e:{x:7.0}}],
+              [{b:-1.0,d:1.0,o:-1.0,r:288.0,sX:9.0,sY:9.0},{b:9100.0,d:900.0,x:-1400.0,y:-660.0,o:1.0,r:-288.0,sX:-9.0,sY:-9.0,e:{r:6.0}},{b:10000.0,d:1600.0,x:-200.0,o:-1.0,e:{x:16.0}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1920);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+	<style>
+
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+
+		footer h3{
+		  color: #000;
+		}
+		footer p{
+		color: #000;
+		}
+
+		.slidercontainer{
+		width:100%;
+		}
+		.intro{
+		padding-top:25px;
+		padding-bottom:25px;
+		}
+    </style>
+
+	<!--Sticky menu-->
+	 <script>
+$( document ).ready(function() {
+   $(window).scroll(function () {
+  if ( $(this).scrollTop() > 3) {
+    $(".navbar-inner").addClass("stickytop");
+   } else if ( $(this).scrollTop() <= 3) {
+    $(".navbar-inner").removeClass("stickytop");
+  }
+});
+});
+
+ </script>
+
+    </head>
+<body>
+
+	<!-- Header
+	================================================== -->
+	<header id="header">
+
+		<!-- Navigation
+		================================================== -->
+		<nav class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<!-- Logo -->
+					<a class="brand" href="index.html">
+						Kodai Asif Cabs
+					</a>
+					<ul class="nav">
+						<li class="active"><a href="index.html" title="Home">Home</a></li>
+						<li><a href="about-us.html" title="About Us">About Us</a></li>
+						<li><a href="#" title="Our team">Services</a></li>
+						<li class="dropdown">
+							<a style="margin-bottom: 10px;" href="#" title="Tariffs&tour Packages">Tours</a>
+							<!-- Dropdown menu -->
+							<ul>
+								<li><a href="#" title="">Tariffs</a></li>
+								<li><a href="#" title="">Tours</a></li>
+								<li><a href="#" title="">Special Tours</a></li>
+							</ul>
+						</li>
+						<li><a href="contact.html" title="Contact us">Contact Us</a></li>
+					</ul>
+				</div><!-- end .container -->
+			</div><!-- end .navbar-inner -->
+		</nav>
+
+	</header>
+
+	<!-- Content
+	================================================== -->
+	<section id="content" class="container">
+
+</section><!-- end .container -->
+
+<div class="lead-container">
+<div class="slidercontainer">
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/banner2.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="img/banner3.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+    </div>
+
+
+</div>
+</div>
+
+<section class="container">
+
+	<!--Introduction part-->
+	<section class="row intro">
+	<article class="span4">
+	Kodaiasifcabs tours and Travels
+	</article>
+	<article class="span9"><h2>Welcome to Asif Cabs</h2>
+	Lorem Ipsum Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+	</article>
+	</section>
+
+
+	<section class="row">
+		<article class="span4">
+			<h2><span class="grey">Our</span> Company</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p><a class="" href="#">Read more &raquo;</a></p>
+		</article>
+		<article class="span4">
+			<h2><span class="grey">Tour</span> Packages</h2>
+			<p>
+				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+			</p>
+			<p><a class="" href="#">Read more &raquo;</a></p>
+		</article>
+		<article class="span4">
+			<h2><span class="grey">Our</span> Tariffs</h2>
+			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<p><a class="" href="#">Read more &raquo;</a></p>
+		</article>
+	</section>
+	<!-- end .row -->
+
+	<hr />
+
+	<section class="row" id="portfolio">
+
+		<!-- portfolio item-->
+		<article class="span4 project link">
+
+			<div class="thumbnail">
+				<!-- image -->
+				<a href="project.html" title="">
+					<img alt="" src="http://placehold.it/298x186/7ED090/fff" />
+				</a>
+				<!-- description -->
+				<div class="project-description">
+					<!-- icon -->
+					<i class="icon-picture"></i>
+					<!-- name -->
+					<b class="project-name">Title</b>
+				</div>
+				<!-- ribbon -->
+				<div class="ribbon"><span>Awarded</span></div>
+			</div>
+
+		</article>
+		<!-- end portfolio item-->
+
+		<article class="span4 project zoom">
+			<div class="thumbnail">
+				<a href="project.html" title="">
+					<img alt="" src="http://placehold.it/298x186/F26A46/fff" />
+				</a>
+				<a href="#"></a>
+				<div class="project-description">
+					<b class="name">Illustration</b>
+					<i class="icon-font"></i>
+				</div>
+			</div>
+		</article>
+
+		<article class="span4 project link">
+			<div class="thumbnail">
+				<a href="project.html" title="">
+					<img alt="" src="http://placehold.it/298x186/A2DEE3/fff" />
+				</a>
+				<div class="project-description">
+					<b class="name">Video</b>
+					<i class="icon-play"></i>
+				</div>
+			</div>
+		</article>
+
+	</section>
+
+	</section>
+
+	<!-- Footer
+	================================================== -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="span4">
+					<a class="brand" href="index.html">
+						Kodai Asif Cabs
+					</a>
+					<p>
+						Creative agency working <br />with web and interactive media. <br />
+						Lorem ipsum dolor sit amet.
+
+					</p>
+				</div>
+				<div class="span4 social-networks">
+					<h3>Find us elsewhere</h3>
+					<p>
+						<a class="social-network twitter"></a>
+						<a class="social-network facebook"></a>
+						<a class="social-network linkedin"></a>
+						<a class="social-network dribbble"></a>
+						<a class="social-network pinterest"></a>
+					</p>
+				</div>
+				<div class="span4 newsletter">
+					<h3>Book a Cab Now!</h3>
+					<p>Our Company Provides low cost and affordable ride all over Tamilnadu. Please Book in advance to avoid non availablity of Vehicles.</p>
+                 <a href="#" style="color:#000; text-decoration: underline;">Read More</a>
+				</div>
+			</div> <!-- end .row -->
+		</div> <!-- end .container -->
+	</footer><!-- end #footer -->
+
+	<footer id="copyright">
+		<div class="container">
+			<div class="row">
+				<div class="span4">
+					&copy;  Copyrights <a>kodaiasifcabs</a> 2015
+				</div>
+				<div class="span4">
+					<a href="#" title="Send us email">Mobile</a>:
+					+123 320 000 123 456
+				</div>
+				<div class="span4">
+					<a href="#" rel="external" title="">Developed</a> BY <a title="Michal Šimonfy" rel="external" href="#">Anis</a>
+
+				</div>
+			</div> <!-- end .row -->
+		</div> <!-- end .container -->
+	</footer><!-- end #footer-extra -->
+
+	<!-- Javascript - Placed at the end of the document so the pages load faster
+	================================================== -->
+
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+	<script type="text/javascript" src="js/jquery.hotkeys.min.js" charset='utf-8'></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script>jssor_1_slider_init();</script>
+
+</body>
+</html>
