@@ -14,6 +14,7 @@
 
 	<!-- Styles -->
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/bootstrap-override.css" rel="stylesheet">
 	<link href="css/font-awesome/font-awesome.css" rel="stylesheet">
 	<!--[if IE 7]>
 		<link href="css/font-awesome/font-awesome-ie7.css" rel="stylesheet">
@@ -24,13 +25,14 @@
 
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
 
 	<!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+ <script type="text/javascript" src="js/jssor.slider.min.js"></script>
     <!-- use jssor.slider.debug.js instead for debug -->
  <script>
         jssor_1_slider_init = function() {
@@ -166,6 +168,83 @@ $( document ).ready(function() {
 });
 
  </script>
+ <!-- Jquery carousel -->
+ <script type="text/javascript">
+	 $(function() {
+
+		 $('#carousel').carouFredSel({
+			 responsive: true,
+			 scroll: 1,
+			 items: {
+				 width: 300,
+				 visible: {
+					 min: 3,
+					 max: 10
+				 }
+			 }
+		 });
+
+	 });
+ </script>
+ <style type="text/css">
+	 	 #wrapper {
+			 display: none;
+		 border-top: 1px solid #cdc;
+		 border-bottom: 1px solid #cdc;
+    background-color: #efe;
+		  width: 100%;
+		 height: 240px;
+		 margin: 0;
+		 position: absolute;
+		 top: 50%;
+		 left: 0;
+	 }
+	 #carousel div {
+		 text-align: center;
+		 width: 250px;
+		 height: 200px;
+		 float: left;
+		 position: relative;
+	 }
+	 #carousel div img {
+		 border: none;
+	 }
+ }
+ #carousel div span {
+	 text-align: center;
+	 color: #333;
+	 font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+	 font-size: 10px;
+	 font-weight: bold;
+	 display: block;
+	 margin-top: -20px;
+ }
+ /*Custom Styles*/
+ .tourspack{
+ border: 1px solid #ddd;
+padding: 15px;
+ }
+ @media screen and (max-width: 680px) {
+	.fulldiv .leftdiv{ width: 100%; float:left; }
+	 .fulldiv .rtdiv{ width: 100%; float:left;}
+ }
+ @media screen and (min-width: 680px) {
+   section#portfolio {
+       margin-bottom: 250px ;
+   }
+	 div#wrapper{
+   top: 286%;
+	 display:block;
+	 }
+
+ }
+ .fulldiv{
+  width:100%;
+ }
+ .leftdiv{ width: 27%; float:left; }
+ .rtdiv{ width: 73%; float:left;}
+ </style>
+ <!-- Jquery carousel End-->
 
     </head>
 <body>
@@ -213,7 +292,7 @@ $( document ).ready(function() {
 <div class="lead-container">
 <div class="slidercontainer">
 
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;">
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 400px; overflow: hidden; visibility: hidden;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
@@ -246,39 +325,91 @@ $( document ).ready(function() {
 
 	<!--Introduction part-->
 	<section class="row intro">
-	<article class="span13"><h2 style="color:#f22f2f;">Welcome to Asif Cabs | Kodaikanal Tours & Travels</h2><p>
-  We Operating Cabs and all types of vehicles in <strong>Kodaikanal</strong> for the past 15 years. The main objective of Our Travel Agency is to provide a safe and affordable journey to all people comes to kodaikanal.We arrange tours all over India. We have happy customers in all states they come to Us with a plan We completely Execute their plan never miss anything from their Wishlsit. Also We make their trip pleasant by adding some additional places to visit maost of the people wonder if the place exist in kodaikanal. The Wildlife in Kodaikanal and safari into the forest to see Bison and Cheetah.
+	<article class="span13"><h2 style="color:#333;">Welcome to Asif Cabs | Kodaikanal Tours & Travels</h2><p style="line-height: 2; font-size: 16px;">
+  We Operating Cabs and all types of vehicles in <strong>Kodaikanal</strong> for the past 15 years. The main objective of Our Travel Agency is to provide a safe and affordable journey to all people comes to kodaikanal.We arrange tours all over India. We have happy customers in all states they come to Us with a plan We completely Execute their plan never miss anything from their Wishlist. Also We make their trip pleasant by adding some additional places to visit maost of the people wonder if the place exist in kodaikanal. The Wildlife in Kodaikanal and safari into the forest to see Bison and Cheetah.
 	The Tour Packages We offer always most benificial for the Tourist with Low Cost Hotel Booking.</p>
 	</article>
 	</section>
 
 
 	<section class="row">
+		<article class="span13">
+			<h2 style="color:#333;">Kodaikanal Tour Packages</h2>
+			<div class="fulldiv">
+    <div class="leftdiv"><img src="img/berijam.jpg" style="border: 1px solid #ddd; padding:3px;" alt="kodaiasifcabs" height="175"></div>
+		<div class="rtdiv"><p style=" line-height: 2; font-size: 16px;">Asif Cabs always have a special place in Kodaikanal Tourism. The People who comes to Kodaikanal from other parts of India always trust Us more , because of the Quality service and On-time Schedules and affordable Tours. Our Customer base is growing rapid because the hard work done by our drivers and Clean and Clear Cabs We provide to the customers who contact us. Some of Our Successful Tour Packages listed below. You can directly Contact Our Office and Book Your Tour with Us ..<span style="color: #008000; font-size:15px; font-weight:600;">  Hurry Up and book soon to get exciting offers ! free rides waiting For You !!!</span> </p></div>
+   	</div>
+			</article>
+	</section>
+	<section class="row">
+
 		<article class="span4">
-			<h2><span class="grey">Our</span> Company</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
+			<h2><span class="grey">Silver</span> Tour Package</h2>
+			<div class="thumbnail">
+				<!-- image -->
+				<a href="#" title="">
+					<img alt="" src="img/walk.jpg" style="height: 205px;  width: 365px;">
+				</a>
+				<!-- description -->
+			</div>
+			<h3 style="background: #F5630D; text-align: center; padding:7px; color:#fff;">Half Day - 8 Places</h3>
+      <div class="tourspack">
+			<p>Kodaikanal's best places to visit will be covered in this tour. We make Your tour more enjoyable with great care and safety.</p>
+      <hr style="background-color: #ddd;">
+			<p style="font-size: 12px; font-weight: bold;">Places:</p>
+			<p style="color: #000; font-size:12px;"> La Saleth - 500 Years Old Tree - Dolphin Nose - Mountain Beauty - Bryant Park - Pambar Falls - Echo Rock - Kodai Lake & City Drop..</p>
+     <hr style="background-color: #ddd;">
+			<p style=" font-size: 15px; font-weight:600; color:#cc0000;">By Car  Rs. 1300* </p>
 			<p><a class="" href="#">Read more &raquo;</a></p>
+		</div>
 		</article>
 		<article class="span4">
-			<h2><span class="grey">Tour</span> Packages</h2>
-			<p>
-				Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-			</p>
+			<h2><span class="grey">Gold</span> Tour Package</h2>
+			<div class="thumbnail">
+				<!-- image -->
+				<a href="#" title="">
+					<img alt="" src="img/gold.jpg">
+				</a>
+				<!-- description -->
+			</div>
+			<h3 style="background: #267F0B; text-align: center; padding:7px; color:#fff;">Full Day - 7 Places</h3>
+			<div class="tourspack">
+			<p>Kodaikanal's exciting places will be covered in Our Gold Tour Package. Tourists who like to dig into Wild animals forests & trekking can go for this Tour.</p>
+			<hr style="background-color: #ddd;">
+			<p style="font-size: 12px; font-weight: bold;">Places:</p>
+			<p style="color: #000; font-size:12px;"> Silent Valley View - Fire Tower - Berijam Lake - Cap Fly Valley - Mind Changing Forest - Gundar Falls - Kodai Lake & City Drop..</p>
+		 <hr style="background-color: #ddd;">
+			<p style=" font-size: 15px; font-weight:600; color:#cc0000;">By Car  Rs. 2200* </p>
 			<p><a class="" href="#">Read more &raquo;</a></p>
+		</div>
 		</article>
 		<article class="span4">
-			<h2><span class="grey">Our</span> Tariffs</h2>
-			<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			<h2><span class="grey">Platinum</span> Tour Package</h2>
+			<div class="thumbnail">
+				<!-- image -->
+				<a href="#" title="">
+					<img alt="" src="img/platinum.jpg" style="height: 205px;  width: 365px;">
+				</a>
+				<!-- description -->
+				<!-- ribbon -->
+				<div class="ribbon"><span>Premium</span></div>
+			</div>
+			<h3 style="background: #3B197F; text-align: center; padding:7px; color:#fff;">Unseen Beauty of Kodaikanal</h3>
+			<div class="tourspack">
+			<p> We have carefully chosen some interior parts of Kodai for You. The Unseen places are listed and provided as a tour from Asif Cabs.</p>
+			<hr style="background-color: #ddd;">
+			<p style="font-size: 12px; font-weight: bold;">Places:</p>
+			<p style="color: #000; font-size:12px;">Poombarai Villiage - Mannavanur Lake - Night Safari - Wildlife Forest - Lion Cave - Berijam Interior - Shooting Spots - Kodai Lake & City Drop..</p>
+		 <hr style="background-color: #ddd;">
+			<p style=" font-size: 15px; font-weight:600; color:#cc0000;">By Car  Rs. 3500* </p>
 			<p><a class="" href="#">Read more &raquo;</a></p>
+		</div>
 		</article>
 	</section>
 	<!-- end .row -->
 
 	<hr />
-
-	<section class="row" id="portfolio">
+	 <section class="row" id="portfolio">
 
 		<!-- portfolio item-->
 		<article class="span4 project link">
@@ -326,8 +457,36 @@ $( document ).ready(function() {
 				</div>
 			</div>
 		</article>
-
 	</section>
+
+	<!-- Carousel -->
+		<section class="row">
+			<article class="span9">
+				<div id="wrapper">
+					<div id="carousel">
+						<div style="width:400px;">
+							<img src="img/innova.jpg" alt="fruit1" width="250" height="170" style="margin-top:25px; padding:0 5px;" />
+						</div>
+						<div style="width:220px;">
+							<img src="img/tavera.png" alt="fruit8" width="260" height="190" style="padding:0 5px;" />
+						</div>
+						<div style="width:220px;">
+							<img src="img/vista1.png" alt="fruit9" width="250" height="190" style="padding:0 5px; margin-top: 10px;"/>
+						</div>
+						<div style="width:220px;">
+							<img src="img/etios.png" alt="fruit10" width="290" height="180" style="padding:0 5px; margin-top:15px;"/>
+						</div>
+						<div style="width:220px;">
+							<img src="img/timpo.png" alt="fruit11" width="269" height="220" style="padding:0 5px;"/>
+						</div>
+						<div style="width:220px;">
+							<img src="img/bus_1.png" alt="fruit12" width="290" height="220" style="padding:0 5px;"/>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		</section><!-- Carousel end -->
 
 	</section>
 
